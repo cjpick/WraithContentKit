@@ -13,12 +13,6 @@ public protocol ContentElementType {
     var view: UIView { get }
 }
 
-public extension ContentElementType {
-    func view()->UIView {
-        return view
-    }
-}
-
 public struct CustomContentElement: ContentElementType {
     
     public var view: UIView { return _view }
